@@ -193,7 +193,6 @@ Navbar
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-
 }
 
 .nav-btn {
@@ -204,7 +203,6 @@ Navbar
   cursor: pointer;
   /* justify-content: space-between; */
   justify-self: end;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -239,8 +237,7 @@ Navbar
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center  ;
-
+    align-items: center;
   }
 }
 
@@ -249,6 +246,72 @@ Navbar
 Sidebar
 ===============
 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: hsl(210, 36%, 96%);
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  /* add later */
+  /* transform: translateX(-100%); */
+}
+
+.sidebar-links {
+  text-align: center;
+}
+
+.sidebar-links a {
+  font-size: 2rem;
+  text-transform: capitalize;
+  transition: var(--transition);
+  color: grey;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-links a:hover {
+  color: goldenrod;
+}
+
+.social-icons {
+  display: grid;
+  margin-top: 3rem;
+  width: 20rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: rgb(56, 40, 40);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: goldenrod;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  border: transparent;
+  transition: var(--transition);
+  color: #bb2525;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #e66b6b;
+}
 
 /*
 =============== 
