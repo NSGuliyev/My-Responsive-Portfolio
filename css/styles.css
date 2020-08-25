@@ -442,6 +442,10 @@ About
   .about-img::before {
     left: -2rem;
   }
+
+  .about-info {
+    align-self: center;
+  }
 }
 /*
 =============== 
