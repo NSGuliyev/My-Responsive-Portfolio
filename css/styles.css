@@ -600,10 +600,9 @@ Projects
   .project-img {
     height: 100%;
   }
-  .project{
+  .project {
     height: 100%;
   }
-  
 
   .project-1 {
     grid-area: a;
@@ -617,7 +616,6 @@ Projects
   .project-4 {
     grid-area: d;
   }
-
 }
 
 /*
@@ -625,7 +623,20 @@ Projects
 Connect
 ===============
 */
-
+.connect {
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /*
 =============== 
 Skills
